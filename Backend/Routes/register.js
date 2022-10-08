@@ -41,6 +41,20 @@ router.post("/login",(req,res)=>{
             res.status(400).send("invalid user")
         }
     })
+});
+ 
+router.get("/detailUser",(req,res)=>{
+    try {
+        const user = jwt.verify(req.headers.authorization, process.env.SECRET_KEY);
+        UserModal.find({userName : user}).then((data)=>{
+          console.log(data)
+          res.status(200).send({user: data});
+        }).catch((err)=>{
+          res.status(400).send(err);
+        })
+    } catch(err) {
+        res.status(400).send("Unauthorize user", err)
+    }  
 })
 
 module.exports=router;
