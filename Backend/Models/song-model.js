@@ -7,5 +7,5 @@ const songSchema = new mongoose.Schema({
 
 })
 
-const SongModal = mongoose.model("user",songSchema);
+const SongModal = mongoose.model("song",songSchema);
 module.exports =SongModal;

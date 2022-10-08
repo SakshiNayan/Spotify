@@ -7,6 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 const userController= require("./Routes/register")
+const artistController = require('./Routes/artist')
 
 mongoose.connect("mongodb://localhost/spotify",(data)=>{
     console.log("Successfully connect to db")
@@ -27,3 +28,4 @@ app.get("/",function(req,res){
 })
 
 app.use("/user",userController)
+app.use("/artist", artistController)
