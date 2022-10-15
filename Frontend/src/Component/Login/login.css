@@ -1,0 +1,110 @@
+.coverImg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width:100%;
+    height: 931px;
+    opacity: 0.8;
+    
+}
+#content-area{
+    display: flex;
+}
+.login-area{
+    width: 40%;
+    text-align: center;
+    border-right: 1px solid grey;
+    border-color: grey;
+}
+.quotes-area{
+    width: 60%;
+}
+.logo{
+    border-radius: 30px;
+    height: 70px;
+    width: 30%;
+}
+.login-area,.quotes-area{
+    padding-top: 130px;
+    height: 750px;
+}
+#userLogin{
+    height: 400px;
+    margin-left: 130px;
+}
+.login-form{
+    text-align: left;
+    background-color: rgb(237, 210, 248);
+    width: 75%;
+    height: 90%;
+    margin-top: 30px;
+    
+  }
+  input{
+    width: 290px;
+    height: 40px;
+    font-size: larger;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: grey;
+    background-color:rgb(237, 210, 248);
+  }
+  .input-field{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .lable{
+    margin-top: 20px;
+  }
+  .Forgot-password{
+  
+    margin-left:200px;
+    color: blue;
+  }
+  #Button-signin{
+    width: 170px;
+     height: 50px;
+     border: #5861AE;
+     color: white;
+     background: #5861AE 0% 0% no-repeat padding-box;
+     opacity: 1;
+     border-radius: 30px;
+
+   }
+   #login-b{
+     text-align: center;
+   }
+   #Button-signin{
+     cursor: pointer;
+   }
+   .lable{
+     font-size: large;
+  
+   }
+.loginhead{
+    margin-left: 20px;
+    padding: 20px 0px 10px 0px;
+
+}
+.accountText{
+    font-size: large;
+    font-weight:bold ;
+    color: aliceblue;
+    text-shadow:4px 2px black;
+    margin-top: 20px;
+}
+#regis-button{
+    width: 200px;
+    height: 50px;
+    border: 2px solid  #6d3a74;
+    border-radius: 30px;
+    opacity: 1;
+    font-size: larger;
+    margin-top: 30px;
+}
+#regis-button:hover{
+    cursor: pointer;
+    background-color: #6d3a74;
+    color: white;
+}

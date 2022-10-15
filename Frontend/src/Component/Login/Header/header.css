@@ -1,0 +1,18 @@
+#coverheader{
+    display: flex;
+    color: white;
+    margin-top: 20px;
+}
+.home{
+    width: 80%;
+    text-align: right;
+}
+.trial{
+    width: 12%;
+    text-align: right;
+}
+.login{
+    width: 8%;
+    text-align: right;
+    margin-right: 30px;
+}

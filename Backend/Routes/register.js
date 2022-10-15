@@ -13,7 +13,10 @@ router.post("/register", async(req,res)=>{
         generatePassHash(req.body.password).then((passHash)=>{
             UserModal.create({
                 userName : req.body.userName,
-                password : passHash
+                password : passHash,
+                email : req.body.email,
+                DOB: req.body.DOB,
+                userType : req.body.userType
             })
         }).then(()=>{
             res.status(200).send(`${req.body.userName} successfylly added`)
